@@ -4,6 +4,8 @@ entries_for_21_to_30 = []
 entries_for_31_to_40 = []
 entries_for_41_to_50 = []
 
+print("")
+
 while True:
     user_input = input("Enter a number (1-50): ")
     if user_input.isdigit():
@@ -29,9 +31,9 @@ while True:
                 entries_for_41_to_50.append(user_input)    
     else:
         print("Invalid input, must be a digit.")
-        print("Please try again.")
+        print("Please try again.\n")
 
-print("Result:")
+print("\nResult:")
 
 numbers_of_1_to_10 = len(entries_for_1_to_10)  
 numbers_of_11_to_20 = len(entries_for_11_to_20)
@@ -43,3 +45,11 @@ print(f"11-20 = {numbers_of_11_to_20}")
 print(f"21-30 = {numbers_of_21_to_30}")
 print(f"31-40 = {numbers_of_31_to_40}")
 print(f"41-50 = {numbers_of_41_to_50}")
+
+print("\nDataset (dedicated range):")
+print("*inputted valid numbers")
+print(f"1-10 = {entries_for_1_to_10}")
+print(f"11-20 = {entries_for_11_to_20}")
+print(f"21-30 = {entries_for_21_to_30}")
+print(f"31-40 = {entries_for_31_to_40}")
+print(f"41-50 = {entries_for_41_to_50}\n")
